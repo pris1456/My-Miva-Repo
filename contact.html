@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Samson Okpochini</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="brand logo-font" href="index.html">Samson Okpochini</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation"><i data-lucide="menu"></i></button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html"><i data-lucide="home"></i> Home</a></li>
+        <li><a href="about.html"><i data-lucide="user"></i> About Me</a></li>
+        <li><a href="projects.html"><i data-lucide="briefcase"></i> Projects</a></li>
+        <li><a href="planner.html"><i data-lucide="calendar-check"></i> Academic Planner</a></li>
+        <li><a class="active" href="contact.html"><i data-lucide="mail"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="section page">
+    <div class="container contact-grid">
+      <section class="reveal">
+        <p class="eyebrow">Contact</p>
+        <h1>Get in touch with Samson Okpochini.</h1>
+        <p class="page-copy">
+          This contact page demonstrates a complete form with JavaScript validation for empty
+          fields, valid email format, and phone numbers containing only digits.
+        </p>
+
+        <div class="contact-summary">
+          <p><i data-lucide="user"></i><strong>Name:</strong> Samson Okpochini</p>
+          <p><i data-lucide="map-pin"></i><strong>Location:</strong> Nigeria</p>
+          <p><i data-lucide="graduation-cap"></i><strong>School:</strong> MIVA Open University</p>
+          <p><i data-lucide="shield"></i><strong>Program:</strong> CS Cybersecurity, 100 Level</p>
+          <p><i data-lucide="mail"></i><strong>Email:</strong> samson@example.com</p>
+          <p><i data-lucide="phone"></i><strong>Phone:</strong> 08012345678</p>
+        </div>
+      </section>
+
+      <form class="contact-form reveal delay-1" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Your full name" />
+          <small></small>
+        </div>
+
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input id="email" type="email" placeholder="you@example.com" />
+          <small></small>
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone Number</label>
+          <input id="phone" type="text" placeholder="08012345678" />
+          <small></small>
+        </div>
+
+        <div class="field">
+          <label for="subject">Subject</label>
+          <input id="subject" type="text" placeholder="Message subject" />
+          <small></small>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Write your message"></textarea>
+          <small></small>
+        </div>
+
+        <button class="btn btn-primary" type="submit">
+          Submit Message <i data-lucide="send"></i>
+        </button>
+
+        <p class="success-message" id="formSuccess"></p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Samson Okpochini. COS 106 Term Project.</p>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
